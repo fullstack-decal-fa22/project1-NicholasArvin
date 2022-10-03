@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    color: black;
+  }
+
+body {
+    background-color: lightblue;
+}
+
+span {
+    /* Span is default inline */
+    color: blue;
+    font-weight: 700;
+    height: 40000px;
+  }
+
+  p {
+    font: 15px Arial, sans-serif;
+  }
+  
+
+.container {
+    display: grid;
+    height: 110vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .2fr 1.5fr 1.2fr .8fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer"
+    ;
+    grid-gap: .2rem;
+}
+
+nav {
+    background-color: #FFBF00;
+    grid-area: nav;
+}
+
+main {
+    background-color: #FF7F50;
+    grid-area: main;
+}
+
+#sidebar {
+    background-color: #DE3163;
+    grid-area: sidebar;
+}
+
+#content1 {
+    background-color: #9FE2BF;
+    grid-area: content1;
+}
+
+#content2 {
+    background-color: #40E0D0;
+    grid-area: content2;
+}
+
+#content3 {
+    background-color: #6495ED;
+    grid-area: content3;
+}
+
+footer {
+    background-color: #CCCCFF;
+    grid-area: footer;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    width: 50px;
+    margin: 10px;
+}
+
+.label {
+    color: blueviolet;
+  }
+  
+.label:hover {
+    font-size: larger;
+    color: #EE6363;
+}
